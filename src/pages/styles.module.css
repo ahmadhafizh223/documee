@@ -6,22 +6,48 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+  padding: 30% 0;
+  text-align: left;
   position: relative;
-  overflow: hidden;
+	overflow: hidden;
+	background-image: url('../../static/img/banner.svg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+
+h1.titleHero{
+	font-size: 2.8rem;
+	width: 160%;
+	color: black;
+}
+
+b{
+	color: #1d68e1;
+}
+
+.subtitleHero{
+	font-size: 1rem;
+	color: black;
+}
+
+.getStarted{
+	font-size: 0.8rem;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.buttons2 {
+  display: flex;
+  align-items: center;
+	justify-content: center;
+	margin-left: 10px;
 }
 
 .features {
@@ -34,4 +60,172 @@
 .featureImage {
   height: 200px;
   width: 200px;
+}
+
+
+.containerHero{
+	padding-right: 50%;
+	margin-top: -30%;
+}
+
+
+ @media screen and (min-width: 967px) and (max-width: 1600px) {
+  /* .heroBanner {
+		padding: 30rem 0;
+		text-align: left;
+		position: relative;
+		overflow: hidden;
+		background-image: url('../../static/img/banner.svg');
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: bottom;
+	} */
+	
+	h1.titleHero{
+		font-size: 2.8rem;
+		width: 120%;
+		color: black;
+	}
+
+
+	.containerHero{
+		padding-right: 50%;
+		margin-top: -30%;
+	}
+
+	/* b{
+		color: #1d68e1;
+	}
+
+	.subtitleHero{
+		font-size: 1rem;
+		color: black;
+	
+	}
+
+	.buttons2 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: 10px;
+	} */
+}
+
+
+@media screen and (min-width: 690px) and (max-width: 966px) {
+  
+	.heroBanner {
+		padding: 30% 0;
+		text-align: left;
+		position: relative;
+		overflow: hidden;
+		background-image: url('../../static/img/banner.svg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: bottom;
+	
+	}
+	
+	h1.titleHero{
+		font-size: 1.4rem;
+		width: 160%;
+	}
+	
+	.subtitleHero{
+		font-size: 0.8rem;
+		width: 160%;
+	
+	}
+
+
+	.containerHero{
+		padding-right: 50%;
+		margin-top: -30%;
+	}
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 689px){
+  
+	.heroBanner {
+		padding: 30% 0;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+		background-image: url('../../static/img/banner.svg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: bottom;
+	
+	}
+	
+	h1.titleHero{
+		font-size: 1rem;
+		width: 160%;
+	}
+	
+	.subtitleHero{
+		font-size: 0.7rem;
+		width: 160%;
+	
+	}
+
+	.getStarted{
+		font-size: 0.5rem;
+	}
+
+	.containerHero{
+		padding-right: 40%;
+		margin-top: -30%;
+	}
+
+	.containerButtons{
+		justify-content: center;
+		margin-left: 50%;
+	}
+
+}
+
+
+@media screen and (max-width: 500px){
+  
+	.heroBanner {
+		padding: 28% 0;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+		background-image: url('../../static/img/banner.svg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: bottom;
+	
+	}
+	
+	h1.titleHero{
+		font-size: 0.8rem;
+		width: 160%;
+		
+	}
+	
+	.subtitleHero{
+		font-size: 0.5rem;
+		width: 160%;
+	
+	}
+
+	.getStarted{
+		font-size: 0.5rem;
+	}
+
+	.containerHero{
+		padding-right: 40%;
+		margin-top: -30%;
+		padding-top: 10%;
+	}
+
+	.containerButtons{
+		justify-content: center;
+		margin-left: 50%;
+	}
+
 }
