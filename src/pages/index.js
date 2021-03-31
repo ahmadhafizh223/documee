@@ -5,38 +5,89 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import {
+	Button,
+	Card,
+	CardHeader,
+	CardBody,
+	FormControl,
+	FormGroup,
+	Form,
+	Input,
+	InputGroupAddon,
+	InputGroupText,
+	InputGroup,
+	ListGroupItem,
+	ListGroup,
+	Container,
+	Row,
+	Col
+} from "reactstrap";
 
+const benefits = [
+	{
+
+		description: (
+			<>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna.
+			</>
+		),
+	},
+	{
+
+		description: (
+			<>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna.
+			</>
+		),
+	},
+	{
+
+		description: (
+			<>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna.
+			</>
+		),
+	},
+	{
+
+		description: (
+			<>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna.
+			</>
+		),
+	},
+
+];
 const features = [
 	{
-		title: 'Easy to Use',
-		imageUrl: 'img/undraw_docusaurus_mountain.svg',
+		title: 'Simple with Markdown',
+		imageUrl: 'img/simple-markdown.png',
 		description: (
 			<>
-				Docusaurus was designed from the ground up to be easily installed and
-				used to get your website up and running quickly.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna.
 			</>
 		),
 	},
 	{
-		title: 'Focus on What Matters',
-		imageUrl: 'img/undraw_docusaurus_tree.svg',
+		title: 'It is React',
+		imageUrl: 'img/react.png',
 		description: (
 			<>
-				Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna.
 			</>
 		),
 	},
 	{
-		title: 'Powered by React',
-		imageUrl: 'img/undraw_docusaurus_react.svg',
+		title: 'Easy to Search',
+		imageUrl: 'img/easy-search.png',
 		description: (
 			<>
-				Extend or customize your website layout by reusing React. Docusaurus can
-				be extended while reusing the same header and footer.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna.
 			</>
 		),
 	},
+
 ];
 
 function Feature({ imageUrl, title, description }) {
@@ -51,6 +102,18 @@ function Feature({ imageUrl, title, description }) {
 			<h3>{title}</h3>
 			<p>{description}</p>
 		</div>
+	);
+}
+
+
+function Benefits({ description }) {
+
+	return (
+		<ul>
+
+			{(<li>{description}</li>)}
+
+		</ul>
 	);
 }
 
@@ -105,6 +168,26 @@ export default function Home() {
 			</header>
 
 			<main>
+				{benefits && benefits.length > 0 && (
+					<section className={styles.benefits}>
+						<div className={clsx('container', styles.containerBenefits)}>
+							<div className="row">
+								<div className="col col--6">
+									<div className="text--center">
+										<img src='../../static/img/benefits.png' alt='benefits' />
+									</div>
+								</div>
+								<div className="col col--6" style={{ paddingTop: "17%" }}>
+									<h1 className={clsx(styles.benefitTitle)} > Your Benefits</h1>
+									{benefits.map((props, idx) => (
+										<Benefits key={idx} {...props} />
+									))}
+								</div>
+
+							</div>
+						</div>
+					</section>
+				)}
 				{features && features.length > 0 && (
 					<section className={styles.features}>
 						<div className="container">
@@ -112,11 +195,65 @@ export default function Home() {
 								{features.map((props, idx) => (
 									<Feature key={idx} {...props} />
 								))}
+								<div className={clsx('col col--4 col--offset-2', styles.feature)}>
+
+									<div className="text--center">
+										<img className={styles.featureImage} src='../../static/img/history.png' alt='Provide File History' />
+									</div>
+
+									<h3>Provide File History</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna.</p>
+								</div>
+								<div className={clsx('col col--4', styles.feature)}>
+
+									<div className="text--center">
+										<img className={styles.featureImage} src='../../static/img/Saly-31.png' alt='Language Translation' />
+									</div>
+
+									<h3>Language Translation</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna.</p>
+								</div>
 							</div>
 						</div>
+
+
 					</section>
 				)}
+
+				<section className={styles.beforeFooter}>
+					<div className="container" style={{ marginTop: "-3%", paddingBottom: "2%" }}>
+						<h1>Ready to Publish Your Docs?</h1>
+						<div className={styles.buttons} style={{ marginTop: "3%" }}>
+							<Link
+								className={clsx(
+									'button button--primary button--lg',
+									styles.getStarted,
+								)}
+								to={useBaseUrl('docs/')}>
+								Write a Doc
+            	</Link>
+
+						</div>
+					</div>
+				</section>
 			</main>
+			<footer>
+				<div className={clsx('container', styles.containerFooter)}>
+					<div className="row">
+						<div className="col col--6">
+							<span>Docume is lorem ipsum dolor sit amet. <br />Consectetur adipiscing elit, cras lorem ac.</span>
+						</div>
+						<div className="col col--2">
+
+						</div>
+						<div className="col col--4">
+							<span>© 2021, PT Paragon Technology and Innovation</span>
+						</div>
+
+
+					</div>
+				</div>
+			</footer>
 		</Layout>
 	);
 }
