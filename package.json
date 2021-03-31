@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "start": "PORT=3333 docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -16,6 +16,8 @@
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.72",
     "@docusaurus/preset-classic": "2.0.0-alpha.72",
+    "@feedloop/qore-client": "^0.1.35",
+    "@feedloop/qore-react": "^0.1.35",
     "@mdx-js/react": "^1.6.21",
     "availity-reactstrap-validation": "^2.7.1",
     "axios": "^0.21.1",
@@ -36,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@feedloop/qore-cli": "^0.1.28"
   }
 }

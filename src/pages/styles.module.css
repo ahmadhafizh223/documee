@@ -69,6 +69,14 @@ b{
 }
 
 
+
+.titleFaq{
+	font-size: 0.8rem;
+	color: black;
+	margin-top: 3%;
+}
+
+
  @media screen and (min-width: 967px) and (max-width: 1600px) {
   /* .heroBanner {
 		padding: 30rem 0;
@@ -145,10 +153,10 @@ b{
 
 }
 
-@media screen and (min-width: 500px) and (max-width: 689px){
+@media screen and (min-width: 505px) and (max-width: 689px){
   
 	.heroBanner {
-		padding: 30% 0;
+		padding: 25% 0;
 		text-align: center;
 		position: relative;
 		overflow: hidden;
@@ -156,6 +164,7 @@ b{
 		background-repeat: no-repeat;
 		background-size: 100%;
 		background-position: bottom;
+	
 	
 	}
 	
@@ -177,20 +186,29 @@ b{
 	.containerHero{
 		padding-right: 40%;
 		margin-top: -30%;
+		padding-top: 10%;
 	}
 
 	.containerButtons{
 		justify-content: center;
-		margin-left: 50%;
+		margin-left: 60%;
+	}
+
+	p.titleFaq{
+		font-size: 0.7rem;
+		color: black;
+		margin-top: 3%;
+		margin-left: 60%;
+		
 	}
 
 }
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 505px){
   
 	.heroBanner {
-		padding: 28% 0;
+		padding: 5% 0;
 		text-align: center;
 		position: relative;
 		overflow: hidden;
@@ -220,12 +238,23 @@ b{
 	.containerHero{
 		padding-right: 40%;
 		margin-top: -30%;
-		padding-top: 10%;
+		padding-top: 30%;
 	}
 
 	.containerButtons{
 		justify-content: center;
-		margin-left: 50%;
+		margin-left: 60%;
 	}
+
+	p.titleFaq{
+		font-size: 0.5rem;
+		color: black;
+		margin-top: 3%;
+		margin-bottom: 38%;
+		
+		
+	}
+
+	
 
 }

@@ -1,6 +1,6 @@
 {
   "version": "v1",
-  "endpoint": "https://stg-qore-app.qorebase.io",
+  "endpoint": "https://prod-qore-app.qorebase.io",
   "projectId": "I4FMZ3AJfGxQakb",
   "organizationId": "jOFw6slDwPhyzDM",
   "authenticationId": "nCRpkP6qBsShicE",

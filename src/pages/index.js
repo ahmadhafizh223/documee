@@ -91,6 +91,15 @@ export default function Home() {
 
 						</div>
 					</div>
+					<p className={clsx(styles.titleFaq)}>Do you have questions?
+						<Link
+							className={clsx(
+								styles.getStarted,
+							)}
+							to={useBaseUrl('faq/')}>
+							<b>  FAQ</b>
+						</Link>
+					</p>
 
 				</div>
 			</header>
