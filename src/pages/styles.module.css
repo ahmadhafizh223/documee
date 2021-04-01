@@ -17,6 +17,43 @@
 
 }
 
+.directorates {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 4rem 0;
+	padding-bottom: 5%;
+	
+}
+
+.directorate{
+  margin-bottom: 3%;
+	
+}
+
+.cardDirectorate{
+	border: 1px solid orange;
+	padding: 2rem 0;
+}
+
+.heroBannerDirectorate{
+	padding: 9% 0;
+  /* text-align: right; */
+  position: relative;
+	overflow: hidden;
+	background-image: url('../../static/img/directorate-banner.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+}
+
+.titleHeroDirectorate{
+	text-align: right;
+	color: black;
+}
+
+
 
 h1.titleHero{
 	font-size: 2.8rem;
@@ -37,8 +74,6 @@ b{
 	padding-right: 50%;
 	margin-top: -30%;
 }
-
-
 
 .titleFaq{
 	font-size: 0.8rem;
