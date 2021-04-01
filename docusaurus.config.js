@@ -3,7 +3,7 @@ module.exports = {
 	title: 'Documee',
 	tagline: 'Technical You Looking For',
 	url: 'https://ahmadhafizh223.github.io',
-	baseUrl: '/',
+	baseUrl: '/documee/',
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.ico',
