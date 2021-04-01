@@ -18,16 +18,18 @@ module.exports = {
 			},
 			items: [
 				{
-					to: 'docs/',
-					activeBasePath: 'docs',
-					label: 'Docs',
+					to: 'directorate/',
+					activeBasePath: 'directorate',
+					label: 'Directorate',
 					position: 'left',
 				},
-				{ to: 'blog', label: 'Blog', position: 'left' },
 				{ to: 'faq', label: 'FAQ', position: 'left' },
+
+				{ to: 'blog', label: 'Blog', position: 'left' },
+
 				{
-					href: 'https://github.com/facebook/docusaurus',
-					label: 'GitHub',
+					to: 'faq',
+					label: 'Login',
 					position: 'right',
 				},
 			],
