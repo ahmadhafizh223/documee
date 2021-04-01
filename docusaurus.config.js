@@ -2,13 +2,13 @@
 module.exports = {
 	title: 'Documee',
 	tagline: 'Technical You Looking For',
-	url: 'https://your-docusaurus-test-site.com',
+	url: 'https://ahmadhafizh223.github.io',
 	baseUrl: '/',
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.ico',
-	organizationName: 'facebook', // Usually your GitHub org/user name.
-	projectName: 'docusaurus', // Usually your repo name.
+	organizationName: 'ahmadhafizh223', // Usually your GitHub org/user name.
+	projectName: 'documee', // Usually your repo name.
 	themeConfig: {
 		navbar: {
 			title: 'Documee',
